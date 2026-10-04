@@ -15,8 +15,8 @@ int main() {
         f *= (ll)i;
         ln2 +=((1.0 * tmp) / i);
         pi += (-1.0 * tmp) / (2.0 * i + 1);
-        sum += i;
+        if (i * i <= n) sum += i;
     }
-    printf("N! = %d\nln(2) = %3f\nPI = %3f\nS = %d\n",f,ln2,pi * 4, sum);
+    printf("N! = %lld\nln(2) = %3f\nPI = %3f\nS = %lld\n",f,ln2,pi * 4, sum);
     return 0;
 }
